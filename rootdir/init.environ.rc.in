@@ -17,3 +17,5 @@ on early-init
     %EXPORT_GLOBAL_GCOV_OPTIONS%
     %EXPORT_GLOBAL_CLANG_COVERAGE_OPTIONS%
     %EXPORT_GLOBAL_HWASAN_OPTIONS%
+
+    export PATH /sbin:/product/bin:/apex/com.android.runtime/bin:/apex/com.android.art/bin:/system_ext/bin:/system/bin:/system/xbin:/odm/bin:/vendor/bin:/vendor/xbin

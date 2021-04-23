@@ -70,7 +70,6 @@
 #include "subcontext.h"
 #include "system/core/init/property_service.pb.h"
 #include "util.h"
-#include "vendor_init.h"
 
 using namespace std::literals;
 
@@ -1028,9 +1027,6 @@ void PropertyLoadBootDefaults() {
 
     // Weaken property override security during execution of the vendor init extension
     weaken_prop_override_security = true;
-
-    // Update with vendor-specific property runtime overrides
-    vendor_load_properties();
 
     property_initialize_ro_product_props();
     property_derive_build_fingerprint();
